@@ -1,0 +1,243 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+.header {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+section {
+  padding-top: 20px;
+  font-family: "Montserrat";
+}
+section .text-red {
+  margin: 50px auto;
+  max-width: 1093px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28.9924px;
+  line-height: 35px;
+  color: #FF0000;
+  padding: 0 20px;
+}
+section .day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  font-size: 19.1761px;
+  line-height: 23px;
+  color: #858585;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+section .day .wrapp {
+  color: #858585;
+}
+section .day .time {
+  color: #858585;
+}
+section .text-black {
+  font-weight: 700;
+  font-size: 28.9924px;
+  line-height: 35px;
+  color: #222222;
+  margin: 50px auto;
+  max-width: 1093px;
+  width: 100%;
+  padding: 0 20px;
+}
+section .small {
+  font-weight: 600;
+  font-size: 25px;
+}
+section .average {
+  font-weight: 700;
+  font-size: 25px;
+}
+section .comment {
+  display: block;
+  margin: 0 auto;
+  max-width: 753px;
+}
+section .banner {
+  max-width: 1053px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+section .banner-small {
+  max-width: 693px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+section .text-name {
+  font-weight: 700;
+  font-size: 25px;
+}
+@media screen and (max-width: 767px) {
+  section .text-black,
+section .text-red,
+section .text-name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  section .text-black,
+section .text-red {
+    margin: 30px auto;
+  }
+}
+
+.form {
+  max-width: 700px;
+  width: 100%;
+  display: block;
+  margin: 0 auto 0px;
+  background-color: rgb(244, 233, 220);
+  padding: 30px 20px;
+}
+.form p {
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form .text-blue {
+  color: blue;
+}
+.form .title {
+  font-size: 28px;
+}
+.form .warn {
+  font-size: 18px;
+}
+.form .conf {
+  font-size: 14px;
+}
+.form form {
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 18px;
+  padding: 30px 0;
+}
+.form form input {
+  display: block;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  padding-left: 20px;
+  font-size: 22px;
+  border: 2px solid rgb(242, 248, 159);
+}
+.form form .form-btn {
+  display: block;
+  width: 100%;
+  background-color: rgb(49, 135, 240);
+  border-radius: 5px;
+  color: white;
+  height: 70px;
+  font-size: 25px;
+  cursor: pointer;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+.form form .form-btn:hover {
+  background-color: rgb(5, 103, 224);
+}
+
+.myPopup {
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+.open {
+  overflow-y: hidden;
+}
+.open #wrapper-pop {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: black;
+  background-color: rgb(213, 223, 223);
+  padding: 40px;
+  border-radius: 5px;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+@media screen and (max-width: 767px) {
+  .open #wrapper-pop {
+    padding: 40px 5px;
+  }
+}
+.open #wrapper-pop .pop-btn {
+  display: block;
+  background-color: rgb(36, 121, 248);
+  padding: 20px 40px;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+@media screen and (max-width: 767px) {
+  .open #wrapper-pop .pop-btn {
+    font-size: 16px;
+    padding: 10px 0px;
+  }
+}
+.open #wrapper-pop .pop-btn:hover {
+  background-color: rgb(4, 87, 212);
+}
+.open #wrapper-pop .pop-text {
+  color: black;
+  margin-bottom: 40px;
+  font-size: 24px;
+  text-align: center;
+  max-width: 400px;
+}
+@media screen and (max-width: 767px) {
+  .open #wrapper-pop .pop-text {
+    font-size: 16px;
+  }
+}
+.open #wrapper-pop .cross {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px;
+  cursor: pointer;
+}
+.open .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(12, 12, 12, 0.8);
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+.show .myPopup {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
